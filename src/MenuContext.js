@@ -105,10 +105,6 @@ export default class MenuContext extends Component {
       debug('_isRenderNeeded: skipping - no trigger or options layout');
       return false;
     }
-    if (!optionsLayout.isOutside && prev.optionsLayout.isOutside) {
-      debug('_isRenderNeeded: skipping - just rendered outside');
-      return false;
-    }
     return true;
   }
 
